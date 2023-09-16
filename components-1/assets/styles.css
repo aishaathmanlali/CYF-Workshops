@@ -10,3 +10,9 @@
 @import url(../docs/footer/styles.css);
 @import url(../docs/card/styles.css);
 @import url(../docs/copy/styles.css);
+
+.main__deck{
+    display: flex;
+    justify-content: center;
+}
+
