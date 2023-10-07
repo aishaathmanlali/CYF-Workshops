@@ -1,13 +1,12 @@
-
-
-
-
 function printTimesTables(n) {
-    const count = 1;
-    while(count <= 12) {
-        const product = n * i;
-        console.log(`${n} * ${i} = ${product}`);
-        count++;
-    }
+  let i = 1;
+  let timesTable = "";
+  while (i <= 12) {
+    const product = n * i;
+    timesTable = timesTable + `${n} * ${i} = ${product}` + "\n";
+    i++;
+  }
+  return timesTable;
 }
 
+console.log(printTimesTables(45));
