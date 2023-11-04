@@ -5,8 +5,10 @@
 // Fix anything that doesn't work
 
 function countWords(text) {
-    return text.split('').length;
+  let getWords = text.split(" ");
+  return getWords.length;
 }
+
 
 
 test('should count the words in a string of text', () => {
