@@ -12,3 +12,15 @@ console.log(ingredients === ingredientsCopy);
 console.log(ingredients === otherRecipe);
 console.log(otherRecipe === ingredientsCopy);
 console.log(otherRecipe.length === ingredients.length);
+/*
+console.log(ingredients === ingredientsCopy);
+This is true because they are stored in the same path.
+
+console.log(ingredients === otherRecipe);
+This is false because they are stored in different paths.
+
+console.log(otherRecipe === ingredientsCopy);
+This is false because they are stored in different paths.
+
+console.log(otherRecipe.length === ingredients.length);
+This is true because they have same number of items inside the arrays.
