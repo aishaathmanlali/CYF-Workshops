@@ -7,3 +7,8 @@ const nums = [10,3,5,6,];
 nums[6] = 50;
 
 console.log(nums.length);
+
+/*
+console.log(nums.length);
+This will give 7 as the nums length
+*/
