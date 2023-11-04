@@ -17,3 +17,4 @@ console.log(`The last letter of the alphabet is ${getTail(alphabet)}`);
 console.log(alphabet.length);
 // Explain why alphabet length is now 24
 // How could we change the functions we defined to return the same values, but not change the length of alphabet?
+// The length was 24 because shift removed the first letter from the array and pop removed the last letter from the array.
