@@ -19,3 +19,6 @@ const parts = sentence.split(" ");
 for (const part of parts) {
     console.log(part);
 }
+/*
+At the beginning it was giving each letter but after using split it separated the string into words and not letter.
+*/
