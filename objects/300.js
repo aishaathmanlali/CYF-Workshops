@@ -9,15 +9,15 @@ function checkLivesNearCYF(person) {
 }
 
 const mo = {
-    "name": "Mo",
-    "city": "Glasgow",
-    "focus": "React",
+    name: "Mo",
+    location: "Glasgow",
+    focus: "React",
 };
 
 const sayed = {
-    "name": "Sayed",
-    "city": "Edinburgh",
-    "focus": "SQL",
+    name: "Sayed",
+    location: "Edinburgh",
+    focus: "SQL",
 }
 
 console.assert(checkLivesNearCYF(mo));
