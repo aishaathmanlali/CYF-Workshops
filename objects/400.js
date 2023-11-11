@@ -5,10 +5,10 @@
 
 function printSaladRecipe(forPerson) {
     const saladRecipe = {
-        "name": "salad",
-        "ingredients": ["lettuce", "corn", "carrots", "cucumber"],
-        "rating_out_of_10": 8,
-        "steps": [
+        name: "salad",
+        ingredients: ["lettuce", "corn", "carrots", "cucumber"],
+        rating_out_of_10: 8,
+        steps: [
             "Shred the lettuce",
             "Cut the carrots into small pieces",
             "Slice the cucumber",
@@ -17,7 +17,7 @@ function printSaladRecipe(forPerson) {
     };
 
     if (forPerson.eatsMeat) {
-        saladRecipe.push("chicken");
+        saladRecipe.ingredients.push("chicken");
         saladRecipe.steps.push("Mix in the chicken");
     }
 
