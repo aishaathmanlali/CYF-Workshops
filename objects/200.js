@@ -4,9 +4,9 @@
 // Fix anything that needs fixing.
 
 const person = {
-    "name": "Jemima",
-    "location",
-    "id_number" = 9,
+    name: "Jemima",
+    location: "Glasgow",
+    id_number: 9,
 };
 
 console.assert(person.name === "Jemima");
