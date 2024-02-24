@@ -8,6 +8,7 @@ function CaughtPokemon(Props) {
     "Balbasaur",
     "Caterpie",
     "Metapod",
+    "Abra"
   ]);
   const index = Math.floor(Math.random() * names.length);
 
