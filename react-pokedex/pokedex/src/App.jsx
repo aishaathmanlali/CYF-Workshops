@@ -3,12 +3,13 @@ function App() {
     <div>
       <Logo />
       <BestPokemon />
+      <CaughtPokemon />
     </div>
   );
 }
 
 function Logo() {
-  const appName = "Aisha's Pokedex"
+  const appName = "Aisha's Pokedex";
   return (
     <div>
       <h1>Welcome to {appName}</h1>
@@ -18,9 +19,21 @@ function Logo() {
 }
 
 function BestPokemon() {
+  const abilities = ["Anticipation", "Adaptability", "Run-Away"];
   return (
-  <p>My favourite pokemon is Pikachu</p>
+    <div>
+      <p>My favourite pokemon is Pikachu</p>
+      <ul>
+        {abilities.map((ability, index) => (
+          <li key={index}>{ability}</li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
+function CaughtPokemon() {
+  const date = new Date().toLocaleDateString();
+  return <p>Caught 0 pokemon on {date}</p>;
+}
 export default App;
