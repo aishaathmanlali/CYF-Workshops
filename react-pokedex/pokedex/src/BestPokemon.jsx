@@ -1,10 +1,9 @@
-function BestPokemon() {
-  const abilities = ["Anticipation", "Adaptability", "Run-Away"];
+function BestPokemon(Props) {
   return (
     <div>
       <p>My favourite pokemon is Pikachu</p>
       <ul>
-        {abilities.map((ability, index) => (
+        {Props.abilities.map((ability, index) => (
           <li key={index}>{ability}</li>
         ))}
       </ul>

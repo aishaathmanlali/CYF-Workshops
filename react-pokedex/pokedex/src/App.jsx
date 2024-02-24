@@ -5,9 +5,9 @@ import CaughtPokemon from "./CaughtPokemon.jsx";
 function App() {
   return (
     <div>
-      <Logo />
-      <BestPokemon />
-      <CaughtPokemon />
+      <Logo appName="Aisha's Pokedex" />
+      <BestPokemon abilities = {["Anticipation", "Adaptability", "Run-Away", "Cute-Charm"]} />
+      <CaughtPokemon date = {new Date().toLocaleDateString()} />
     </div>
   );
 }
