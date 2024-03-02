@@ -9,11 +9,11 @@ function App() {
   return (
     <BrowserRouter>
       <nav>
-        <Link to="/logo">Logo </Link>
-        <Link to="/best-pokemon">BestPokemon </Link>
-        <Link to="/caught-pokemon">CaughtPokemon </Link>
-        <Link to="/pokemon-moves-selector">PokemonMovesSelector </Link>
-        <Link to="/pokemon-city">PokemonCity </Link>
+        <Link to="/logo">Home | </Link>
+        <Link to="/best-pokemon">BestPokemon |  </Link>
+        <Link to="/caught-pokemon">CaughtPokemon |  </Link>
+        <Link to="/pokemon-moves-selector">PokemonMovesSelector |  </Link>
+        <Link to="/pokemon-city">PokemonCity  </Link>
       </nav>
       <Routes>
         <Route
