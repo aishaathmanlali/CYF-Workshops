@@ -20,9 +20,18 @@ app.post("/albums", (req, res) => {
 });
 
 app.delete("/albums/:albumID", (req, res) => {
-  console.log("DELETE /albums route");
+  const deleteAlbumId = req.params.albumID;
+  const deleteIndex = albumsData.findIndex(
+    (album) => album.albumId == deleteAlbumId
+  );
+  
+  if (deleteIndex !== -1) {
+    albumsData.splice(deleteIndex, 1);
+    res.send("Album deleted successfully");
+  } else {
+    res.status(404).send("Album not found");
+  }
 });
-
 
 app.listen(3000, () => {
   console.log("Server is listening on port 3000. Ready to accept requests!");
