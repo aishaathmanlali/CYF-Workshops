@@ -11,24 +11,20 @@ app.get("/", (req, res) => {
   );
 });
 
-app.get("/pharmacies", (req, res) => {
-  res.send(stratford.pharmacies);
-});
+app.get("/:city/:category", (req, res) => {
+  let city = req.params.city;
+  let category = req.params.category;
 
-app.get("/colleges", (req, res) => {
-  res.send(stratford.colleges);
-});
-
-app.get("/doctors", (req, res) => {
-  res.send(stratford.doctors);
-});
-
-app.get("/hospitals", (req, res) => {
-  res.send(stratford.hospitals);
+  if (city == "stratford") {
+    res.send(stratford[category]);
+  } else if (city == "harrow") {
+    res.send(harrow[category]);
+  } else if (city == "heathrow") {
+    res.send(heathrow[category]);}
 });
 
 app.listen(4173, () => {
-  console.log(heathrow);
+  // console.log(heathrow);
   console.log("Listening on http://localhost:4173.");
 });
 
