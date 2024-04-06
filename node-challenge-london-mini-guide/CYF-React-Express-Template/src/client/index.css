@@ -1,12 +1,26 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+
+h1 {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+p {
+  font-size: large;
+}
+
+select {
+  font-size: small;
+  margin-bottom: 2rem;
+}
 
 button {
   background-color: #04aa6d; /* Green */
   border: 1px solid black;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
