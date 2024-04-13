@@ -1,17 +1,24 @@
 import chalk from "chalk";
 import words from "./words.json" assert { type: "json" };
 import promptSync from "prompt-sync";
+
 const prompt = promptSync();
+
 let count = 6;
 let str = "";
 let guess;
 let isGuess = false;
+
+//function to choose a random word from the array
 const choseRandomWord = () => {
   const randomIndex = Math.floor(Math.random() * words.length);
   const pickRandomWord = words[randomIndex];
   return pickRandomWord;
 };
+
 let word = choseRandomWord();
+
+//function to compare the random word and the guess word
 const outputFeedback = () => {
   for (let index = 0; index < guess.length; index++) {
     if (word[index] === guess[index]) {
@@ -24,6 +31,8 @@ const outputFeedback = () => {
   }
   return str;
 };
+
+//loop to count down the number of guesses
 while (count > 0 && !isGuess) {
   guess = prompt("Guess a word: ");
   
@@ -33,7 +42,7 @@ while (count > 0 && !isGuess) {
   } else {
     const output = outputFeedback();
     console.log(output); 
-    
+
     if (word == guess) {
       isGuess = true;
       console.log("Congratulations, You guessed the right word.");
