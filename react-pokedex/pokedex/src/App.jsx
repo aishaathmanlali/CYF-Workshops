@@ -18,12 +18,6 @@ function App() {
       <Routes>
         <Route
           element={
-            <Logo appName="Aisha's Pokedex" logWhenClicked={logWhenClicked} />
-          }
-          path="/logo"
-        />
-        <Route
-          element={
             <BestPokemon
               abilities={[
                 "Anticipation",
@@ -45,15 +39,15 @@ function App() {
         />
         <Route element={<PokemonCity />} path="/pokemon-city" />
       </Routes>
-      {/* <div>
+      <div>
         <Logo appName="Aisha's Pokedex" logWhenClicked={logWhenClicked} />
-        <BestPokemon
+        {/* <BestPokemon
           abilities={["Anticipation", "Adaptability", "Run-Away", "Cute-Charm"]}
         />
         <CaughtPokemon date={new Date().toLocaleDateString()} />
         <PokemonMovesSelector />
-        <PokemonCity />
-      </div> */}
+        <PokemonCity /> */}
+      </div>
     </BrowserRouter>
   );
 }
